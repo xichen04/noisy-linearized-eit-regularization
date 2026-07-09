@@ -1,8 +1,7 @@
 # Noisy Linearized Electrical Impedance Tomography
 
-A numerical study comparing **Tikhonov** and **Total Variation (TV)** regularization for noisy linearized Electrical Impedance Tomography (EIT), using a finite element forward model and controlled synthetic conductivity phantoms.
-
-The project asks a computational inverse-problems question: when boundary voltage data are noisy and the EIT forward map is linearized around a homogeneous background, how strongly does reconstruction quality depend on the match between the regularization prior and the true conductivity structure?
+We ran a numerical study comparing Tikhonov and Total Variation regularization for noisy linearized EIT. Used a finite element forward model with controlled synthetic conductivity phantoms.
+The project asks a computational inverse problems question: when EIT measurements are noisy, how much does reconstruction quality depend on choosing a regularization method that matches the true conductivity structure?
 
 <p align="center">
   <img src="figures/phantom_a/true_phantom_a_delta_sigma.png" alt="Phantom A ground truth" width="31%">
@@ -33,7 +32,7 @@ The experiments show that reconstruction quality depends not only on measurement
 
 - **Phantom A (discontinuous inclusion):** TV regularization consistently outperforms Tikhonov by preserving sharp conductivity interfaces.
 
-- **Phantom B (smooth Gaussian inclusion):** Tikhonov generally provides more accurate reconstructions because its smoothness prior better matches the underlying conductivity distribution. Under very high noise, TV becomes competitive due to its stronger noise suppression.
+- **Phantom B (smooth Gaussian inclusion):** Tikhonov generally provides more accurate reconstructions because its smoothness prior better matches the conductivity distribution. Under very high noise, TV outperform Tikhonov due to its stronger noise suppression.
 
 - **Noise-free data are not sufficient:** Significant reconstruction error remains even at 0% noise because of linearization error, discretization error, and regularization bias.
 
