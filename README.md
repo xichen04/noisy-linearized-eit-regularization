@@ -189,8 +189,7 @@ The scripts perform regularization-parameter searches across all configured nois
 
 The full written report is available here:
 
-[`paper/comparison_of_Tikhonov_and_total_variation_regularization_for_noisy_EIT.pdf`]
-paper/comparison_of_Tikhonov_and_total_variation_regularization_for_noisy_EIT.pdf
+[**Project Report (PDF)**](paper/comparison_of_Tikhonov_and_total_variation_regularization_for_noisy_EIT.pdf)
 ## References
 
 - A.-P. Calderon, "On an Inverse Boundary Value Problem," in *Seminar on Numerical Analysis and its Applications to Continuum Physics*.
