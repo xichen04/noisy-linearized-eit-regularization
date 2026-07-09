@@ -204,12 +204,11 @@ The full written report is available here:
 
 Potential extensions include:
 
-- replacing the synthetic parameter search with discrepancy-principle, L-curve, or generalized cross-validation parameter selection;
-- extending the linearized framework to nonlinear Gauss--Newton EIT reconstruction with iterative Jacobian updates;
-- incorporating the Complete Electrode Model (CEM), including electrode contact impedances;
-- comparing Tikhonov and TV against alternative priors such as Huber-TV, sparsity-promoting, or learned regularization methods;
-- investigating robustness under modelling errors, including electrode misplacement, contact impedance uncertainty, and mesh mismatch;
-- benchmarking computational cost, scalability, and memory usage on finer finite element meshes.
+- automatic parameter selection (e.g. L-curve or discrepancy principle)
+- nonlinear Gauss–Newton EIT reconstruction
+- incorporating the Complete Electrode Model (CEM)
+- comparing with alternative regularization methods (e.g. Huber-TV or sparsity-based priors)
+- studying robustness to modelling errors and finer finite element meshes
 ## Notes
 
 - The code is intended as a transparent research prototype rather than a packaged EIT library.
