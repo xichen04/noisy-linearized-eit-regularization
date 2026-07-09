@@ -28,13 +28,17 @@ The project asks a computational inverse-problems question: when boundary voltag
 
 ## Key Findings
 
-The experiments show that reconstruction quality is controlled not only by measurement noise, but also by the compatibility between the regularization prior and the conductivity structure.
 
-- **Phantom A, discontinuous inclusion:** TV regularization outperforms Tikhonov because it preserves sharp interfaces.
-- **Phantom B, smooth Gaussian inclusion:** Tikhonov is more appropriate when the regularization term is active because its smoothness prior better matches the phantom.
-- **Noise-free data are not enough:** substantial reconstruction error remains even at 0% noise because of linearization error, discretization error, and regularization bias.
+The experiments show that reconstruction quality depends not only on measurement noise, but also on how well the regularization prior matches the underlying conductivity structure.
 
-The main scientific conclusion is that prior selection is a structural modelling decision, not merely a numerical tuning choice.
+- **Phantom A (discontinuous inclusion):** TV regularization consistently outperforms Tikhonov by preserving sharp conductivity interfaces.
+
+- **Phantom B (smooth Gaussian inclusion):** Tikhonov generally provides more accurate reconstructions because its smoothness prior better matches the underlying conductivity distribution. Under very high noise, TV becomes competitive due to its stronger noise suppression.
+
+- **Noise-free data are not sufficient:** Significant reconstruction error remains even at 0% noise because of linearization error, discretization error, and regularization bias.
+
+The main conclusion is that the choice of regularization should be guided by both the expected conductivity structure and the measurement noise level, rather than by a single method performing best in all situations.
+
 
 ## Mathematical Model
 
