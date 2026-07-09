@@ -123,7 +123,7 @@ These choices make the project more than a direct application of TV regularizati
 | Phantom | Conductivity structure | Better prior | Interpretation |
 | --- | --- | --- | --- |
 | Phantom A | Piecewise-constant circular inclusion | TV | Preserves the discontinuous interface and reduces smoothing bias |
-| Phantom B | Smooth Gaussian inclusion | Tikhonov, when regularization is active | Smoothness prior better matches the conductivity profile |
+| Phantom B | Smooth Gaussian inclusion | Generally Tikhonov | Smoothness prior better matches the conductivity profile, TV becomes competitive under very high noise |
 
 The results also show that baseline error persists at 0% noise. This indicates that linearization and discretization error can be comparable to, or larger than, measurement noise in linearized EIT.
 
