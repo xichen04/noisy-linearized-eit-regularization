@@ -54,7 +54,13 @@ where the vector contains the unknown triangle-wise conductivity perturbation an
 
 The regularized inverse problem is
 
-$$z_\alpha = \arg\min_z \left\{ \frac{1}{2}\|Jz - \Delta V^\delta\|_2^2 + \alpha R(z) \right\}.$$
+$$
+z_\alpha =
+\operatorname*{arg\,min}_{z}
+(
+\frac{1}{2}\|Jz - \Delta V^\delta\|_2^2 + \alpha R(z)
+).
+$$
 
 This repository compares two choices of prior:
 
@@ -180,6 +186,16 @@ The scripts perform regularization-parameter searches across all configured nois
 The full written report is available here:
 
 [`paper/comparison_of_tikhonov_and_tv_regularization_for_noisy_linearized_eit.pdf`](paper/comparison_of_tikhonov_and_tv_regularization_for_noisy_linearized_eit.pdf)
+
+## References
+
+- A.-P. Calderon, "On an Inverse Boundary Value Problem," in *Seminar on Numerical Analysis and its Applications to Continuum Physics*.
+- A. N. Tikhonov and V. Y. Arsenin, *Solutions of Ill-Posed Problems*, Winston & Sons, 1977.
+- L. I. Rudin, S. Osher, and E. Fatemi, "Nonlinear Total Variation Based Noise Removal Algorithms," *Physica D: Nonlinear Phenomena*, 1992.
+- A. Borsic, B. M. Graham, A. Adler, and W. R. B. Lionheart, "Total Variation Regularization in Electrical Impedance Tomography," *IEEE Transactions on Medical Imaging*, 2007.
+- D. S. Holder, ed., *Electrical Impedance Tomography: Methods, History and Applications*, Institute of Physics Publishing, 2005.
+- A. Adler and W. R. B. Lionheart, "Uses and abuses of EIDORS: An extensible software base for EIT," *Physiological Measurement*, 2006.
+- H. W. Engl, M. Hanke, and A. Neubauer, *Regularization of Inverse Problems*, Springer, 1996.
 
 ## Future Work
 
