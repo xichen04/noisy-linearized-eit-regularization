@@ -56,10 +56,10 @@ The regularized inverse problem is
 
 $$
 z_\alpha =
-\operatorname*{arg\,min}_{z}
-(
+\arg\min_z
+\left(
 \frac{1}{2}\|Jz - \Delta V^\delta\|_2^2 + \alpha R(z)
-).
+\right).
 $$
 
 This repository compares two choices of prior:
